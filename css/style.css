@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.card-container {
+  position: relative;
+  width: 300px; /* Ajusta el tamaño de la tarjeta según tu imagen */
+  text-align: center;
+}
+
+.card-container img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor para los botones */
+.button-container {
+  position: absolute;
+  bottom: 10px; /* Ubica los botones cerca de la parte inferior de la imagen */
+  display: flex;
+  justify-content: space-between; /* Asegura espacio igual entre los botones */
+  width: 90%; /* Asegura que los botones estén dentro de la imagen */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Estilo para ambos botones */
+.location-button,
+.confirm-button {
+  flex: 1; /* Ambos botones tienen el mismo tamaño */
+  margin: 0 5px; /* Espacio entre los botones */
+  padding: 10px 0;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+/* Estilo para el botón "Cómo llego" */
+.location-button {
+  background-color: #28a745;
+}
+
+.location-button:hover {
+  background-color: #218838;
+}
+
+/* Estilo para el botón "Confirmar Asistencia" */
+.confirm-button {
+  background-color: #5d079a;
+}
+
+.confirm-button:hover {
+  background-color: #23003b;
+}
